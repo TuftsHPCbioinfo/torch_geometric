@@ -1,5 +1,5 @@
 # Use the specified base image
-FROM tuftsttsrt/miniforge-cuda
+FROM pytorch/pytorch:2.5.0-cuda12.1-cudnn9-runtime
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
